@@ -2,7 +2,7 @@
     --subtitle:24px;
     --header-1:60px;
     --header-2:44px;
-    --green:#33D9B3;
+    --green:#e6dace;
     --darkGrey:#3E3E3E;
     --contentResult:#FDFCF7;
     --content:#EEEEEE;
@@ -54,6 +54,7 @@ a{
     height: 130px;
     border-radius: 5px;
     margin-right: 10px;
+	animation: bounce 1s ease-in-out infinite;
 }
 .project .container .card .cardLeft{
     width: 40%;
@@ -68,6 +69,19 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+	animation: bounce 1s ease-in-out infinite;
+}
+@keyframes bounce {
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(-5%);
+    }
+    100%{
+        transform:translateY(0%);
+    }
+    
 }
 .project .container .card .cardLeft .heading .head{
     font-size: var(--subtitle);
