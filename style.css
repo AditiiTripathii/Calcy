@@ -154,3 +154,57 @@ a{
     color: var(--contentResult);
     
 }
+
+@media screen and (max-width:640px){
+    body{
+       
+        font-size: 14px;
+        overflow-x: hidden;
+    }
+    .project .container{
+        width: 70%;
+        height: 75vh;
+        
+    }
+    .project .container .card .cardLeft{
+        width: 40%;
+        height: 60vh;
+       
+        margin-left: 40px;
+    }
+    .project .container .card .hLine{
+       
+        width: 60%;
+        margin-bottom: 20px;
+       
+    }
+    .project .container .card .cardLeft .heading .head{
+        font-size: var(--subtitle-resp);
+        font-weight: 400;
+    }
+    .project .container .card .cardRight .inputGrp1 .group input, .project .container .card .cardRight .inputGrp2 .group input, .project .container .card .cardRight .inputGrp3 .group input{
+        width: 40px;
+        height: 25px;
+        margin-left: 4px;
+    
+    }
+    .project .container .card .cardRight .inputGrp1 .error1, .project .container .card .cardRight .inputGrp2 .error2, .project .container .card .cardRight .inputGrp3 .error3{
+        font-size: 9px;
+        line-height: 80%;
+       
+    }
+    .project .container .card .cardRight .btn{
+        margin: 2px 0;
+        padding: 2px 4px;
+        width: 20px;
+        width: fit-content;
+        font-size: var(--subtitle-resp);
+    
+    }
+    .project .container .result{
+        font-size: 16px;
+      
+        
+    }
+    
+}
